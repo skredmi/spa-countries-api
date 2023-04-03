@@ -159,7 +159,7 @@ export const CardDetail = (props) => {
           ) : (
             <TagGroup>
               {neighbors?.map((n) => (
-                <Tag key={n} onClick={() => navigate(`spa-countries-api/country/${n}`)}>
+                <Tag key={n} onClick={() => navigate(`/country/${n}`)}>
                   {n}
                 </Tag>
               ))}
