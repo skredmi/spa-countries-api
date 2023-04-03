@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/spa-countries-api/static/css/main.e937bdad.css",
+    "main.js": "/spa-countries-api/static/js/main.e95182c4.js",
+    "index.html": "/spa-countries-api/index.html",
+    "main.e937bdad.css.map": "/spa-countries-api/static/css/main.e937bdad.css.map",
+    "main.e95182c4.js.map": "/spa-countries-api/static/js/main.e95182c4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e937bdad.css",
+    "static/js/main.e95182c4.js"
+  ]
+}
