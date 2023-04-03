@@ -64,7 +64,7 @@ export const HomePage = ({ countries, setCountries }) => {
           return (
             <Card
               key={c.name.common}
-              onClick={() => navigate(`/country/${c.name.common}`)}
+              onClick={() => navigate(`spa-countries-api/country/${c.name.common}`)}
               {...countryInfo}
             />
           );

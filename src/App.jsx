@@ -16,12 +16,12 @@ function App() {
         <Routes>
           <Route
             exact
-            path="/"
+            path="/spa-countries-api"
             element={
               <HomePage countries={countries} setCountries={setCountries} />
             }
           />
-          <Route path="/country/:name" element={<Details />} />
+          <Route path="/spa-countries-api/country/:name" element={<Details />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Main>
