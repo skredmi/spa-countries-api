@@ -25,7 +25,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](image.png)
+![Main page(light mode)](https://user-images.githubusercontent.com/63904240/229566876-f0c5ae4f-6102-4dc0-a938-4dd6a9a04379.png)
+![Main page(dark mode)](https://user-images.githubusercontent.com/63904240/229566951-da8d351f-8c4d-4ffa-a56d-fe22f3c23cdb.png)
+![Filter](https://user-images.githubusercontent.com/63904240/229567105-ef97f0c5-b700-4858-b6d1-6347959ba62e.png)
+![Card](https://user-images.githubusercontent.com/63904240/229567140-aa177bcd-9d48-42ef-8634-04bfcee34f95.png)
+
 
 
 
@@ -42,5 +46,7 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- Axios
+- React Router
 - [React](https://reactjs.org/) - JS library
 - [Styled Components](https://styled-components.com/) - For styles
