@@ -20,7 +20,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled(Link).attrs({
-  to: "/",
+  to: "/spa-countries-api",
 })`
   color: var(--colors-text);
   font-size: var(--fs-sm);
