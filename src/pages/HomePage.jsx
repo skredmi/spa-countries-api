@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 import { Controls } from "../components/Controls";
 import { List } from "../components/List";
@@ -7,14 +8,15 @@ import { Card } from "../components/Card";
 import { ALL_COUNTRIES } from "../config";
 
 export const HomePage = ({ countries, setCountries }) => {
-  console.log(countries);
+  const navigate = useNavigate();
+
   useEffect(() => {
     if (!countries.length)
       axios.get(ALL_COUNTRIES).then(({ data }) => setCountries(data));
   }, []);
 
   return (
-    <div>
+    <>
       <Controls />
       <List>
         {countries.map((c) => {
@@ -37,9 +39,15 @@ export const HomePage = ({ countries, setCountries }) => {
               },
             ],
           };
-          return <Card key={c.name.common} {...countryInfo} />;
+          return (
+            <Card
+              key={c.name.common}
+              onClick={() => navigate(`/country/${c.name.common}`)}
+              {...countryInfo}
+            />
+          );
         })}
       </List>
-    </div>
+    </>
   );
 };

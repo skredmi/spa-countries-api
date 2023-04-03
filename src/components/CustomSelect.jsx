@@ -21,22 +21,23 @@ export const CustomSelect = styled(Select).attrs({
         ? "var(--colors-bg)"
         : "var(--colors-ui-base)",
     }),
+    singleValue: (provided) => ({
+      ...provided,
+      color: "var(--colors-text)",
+      paddingLeft: "0.25rem",
+    }),
+    menu: (provided) => ({
+      ...provided,
+      backgroundColor: "var(--colors-ui-base)",
+      boxShadow: "var(--shadow)",
+      borderRadius: "var(--radii)",
+    }),
+    container: (provided) => ({
+      ...provided,
+      width: "100%",
+      "@media(min-width: 767px)": {
+        width: "200px",
+      },
+    }),
   },
-})`
-  width: 200px;
-  border-radius: var(--radii);
-  font-family: var(--family);
-  border: none;
-  & > * {
-    box-shadow: var(--shadow);
-  }
-  & input {
-    padding-left: 0.25rem;
-  }
-  & * {
-    color: var(--colors-text) !important;
-  }
-  & > div[id] {
-    background-color: var(--colors-ui-base);
-  }
-`;
+})``;
